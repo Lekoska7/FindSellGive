@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="New product nearby!"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:id="@+id/tv_title"/>
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:id="@+id/iv_logo"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tv_title"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:text="Check it out!"
+        android:textSize="20sp"
+        android:id="@+id/tv_check_product"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true"
+        android:textColor="#000"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:text="Dismiss"
+        android:textSize="20sp"
+        android:id="@+id/tv_dismiss"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000"/>
+</RelativeLayout>

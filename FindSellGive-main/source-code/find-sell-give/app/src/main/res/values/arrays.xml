@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="product_categories">
+        <item>Electronics</item>
+        <item>Housing</item>
+        <item>Entertainment</item>
+        <item>Other</item>
+    </array>
+    <array name="product_purpose">
+        <item>Sell product</item>
+        <item>Give product</item>
+    </array>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/nav_main"/>
+    <item android:title="Wishlist"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_wishlist"
+        android:id="@+id/nav_wishlist"/>
+    <item android:title="Save to collection"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_save_to_collection"
+        android:id="@+id/nav_cart"/>
+    <item android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        android:orderInCategory="100"
+        android:id="@+id/nav_profile"/>
+</menu>

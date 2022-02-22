@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "74577685352",
+    "firebase_url": "https://find-sell-give.firebaseio.com",
+    "project_id": "find-sell-give",
+    "storage_bucket": "find-sell-give.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74577685352:android:1e5a848100b71018",
+        "android_client_info": {
+          "package_name": "mk.com.findsellgive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74577685352-qkcptich67d3sdgmof6ug0gkpn8qdbjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mk.com.findsellgive",
+            "certificate_hash": "26a0ac501c0878cc30f7bb406f25b5455b85a090"
+          }
+        },
+        {
+          "client_id": "74577685352-nfkmpefour412o69lma0qvge13ut49hr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZdmIbhg_Syd1A5DPIITwZ_yF160DLufk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74577685352-nfkmpefour412o69lma0qvge13ut49hr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

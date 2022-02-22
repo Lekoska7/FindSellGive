@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lyt_basic_info"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounder_corners_bg"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/rating"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numStars="5"
+                android:layout_below="@id/tv_userName" />
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_overlay="true"
+            app:civ_border_width="4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyt_basic_info"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounder_corners_bg"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_email_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Email:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:autoLink="email"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lyt_email"
+        android:layout_margin="10dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/profile_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabIndicatorColor="#e0e0e0"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorAccent" />
+
+        <mk.com.findsellgive.viewpagers.NonSwipeableViewPager
+            android:id="@+id/vp_profile_pages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/profile_tabs" />
+    </RelativeLayout>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:layout_gravity="bottom|end"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_wishlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fab_add_product"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_wishlist"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="mini" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fab_add_post"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_home"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="mini" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="auto" />
+
+</RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
